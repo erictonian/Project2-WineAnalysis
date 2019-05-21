@@ -8,12 +8,13 @@ Continuing on Ryan/Eric T's ETL project *"Wine and Happiness"*, we are diving fu
 #### Dataset:
 Wine Reviews - 130k wine reviews with variety, location, winery, price, and description
 https://www.kaggle.com/zynicide/wine-reviews
-![metadata](images/Screen Shot 2019-05-20 at 8.47.34 PM.png)
+
+![metadata](images/metadata.png)
 
 #### Inspiring Visualizations
-![Wine Map](images/page1-1200px-WineProduction.pdf.jpg)
-![d3 Example](images/image.png)
-![varietal example](images/US_WhiteVarietiesShare_Piechart-01.jpg)
+![Wine Map](images/winemap.jpg)
+![d3 Example](images/d3.png)
+![varietal example](images/donut.jpg)
  
 #### Sketch of App Design
-![sketch](images/IMG_0310.jpg)
+![sketch](images/sketch.jpg)
