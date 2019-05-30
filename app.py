@@ -18,7 +18,7 @@ app = Flask(__name__)
 # Database Setup
 #################################################
 
-app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://db/wine_data.sql"
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///db/wine_data.sqlite"
 db = SQLAlchemy(app)
 
 # reflect an existing database into a new model
@@ -27,8 +27,7 @@ Base = automap_base()
 Base.prepare(db.engine, reflect=True)
 
 # Save references to each table
-"Table Name" = Base.classes."insert table name"
-"Table Name" = Base.classes."insert table name"
+Wines = Base.classes.wines
 
 
 @app.route("/")

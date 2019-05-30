@@ -1,6 +1,15 @@
 body {
     padding: 0;
     margin: 0;
+    background-color: #fdfcf9
+}
+
+.navbar {
+    background-color: #5b0e2a;
+}
+
+.navbar-default .navbar-brand {
+    color: white
 }
 
 #mapPlot {

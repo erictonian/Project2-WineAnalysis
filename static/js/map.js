@@ -24,7 +24,7 @@ L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
         valueProperty: "total_wines",
 
         // Set color scale
-        colors: ['#e8a6ba', '#cd8ca2', '#b3748b', '#995c75', '#7f4460', '#672d4b', '#501737', '#380024'],
+        colors: ['#fff199', '#e7cf88', '#d0ae77', '#b88e67', '#a16e57', '#8a5048', '#723139', '#5b0e2a'],
 
         // Number of breaks in step range
         steps: 8,
