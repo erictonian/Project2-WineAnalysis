@@ -1,6 +1,6 @@
-[{
+{
     "type": "FeatureCollection",
-    "features": {
+    "features": [{
         "type": "Feature",
         "id": "ARG",
         "properties": {
@@ -142,14 +142,8 @@
                     ]
                 ]
             ]
-        },
-        "country": "Argentina",
-        "avg_score": 86.7605978261,
-        "total_wines": 3680
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "ARM",
         "properties": {
@@ -184,14 +178,8 @@
                     [43.582746, 41.092143]
                 ]
             ]
-        },
-        "country": "Armenia",
-        "avg_score": 87.5,
-        "total_wines": 2
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "AUS",
         "properties": {
@@ -453,14 +441,8 @@
                     ]
                 ]
             ]
-        },
-        "country": "Australia",
-        "avg_score": 88.5966424682,
-        "total_wines": 2204
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "AUT",
         "properties": {
@@ -512,14 +494,8 @@
                     [16.979667, 48.123497]
                 ]
             ]
-        },
-        "country": "Austria",
-        "avg_score": 90.2107736804,
-        "total_wines": 2766
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "BGR",
         "properties": {
@@ -562,14 +538,8 @@
                     [22.65715, 44.234923]
                 ]
             ]
-        },
-        "country": "Bulgaria",
-        "avg_score": 87.928057554,
-        "total_wines": 139
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "BIH",
         "properties": {
@@ -606,14 +576,8 @@
                     [19.005486, 44.860234]
                 ]
             ]
-        },
-        "country": "Bosnia and Herzegovina",
-        "avg_score": 86.5,
-        "total_wines": 2
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "BRA",
         "properties": {
@@ -831,14 +795,8 @@
                     [-57.625133, -30.216295]
                 ]
             ]
-        },
-        "country": "Brazil",
-        "avg_score": 84.3947368421,
-        "total_wines": 38
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "CAN",
         "properties": {
@@ -1763,14 +1721,8 @@
                     ]
                 ]
             ]
-        },
-        "country": "Canada",
-        "avg_score": 89.5333333333,
-        "total_wines": 225
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "CHE",
         "properties": {
@@ -1809,14 +1761,8 @@
                     [9.594226, 47.525058]
                 ]
             ]
-        },
-        "country": "Switzerland",
-        "avg_score": 88.5714285714,
-        "total_wines": 7
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "CHL",
         "properties": {
@@ -1951,14 +1897,8 @@
                     ]
                 ]
             ]
-        },
-        "country": "Chile",
-        "avg_score": 86.5144561726,
-        "total_wines": 4358
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "CHN",
         "properties": {
@@ -2219,14 +2159,8 @@
                     ]
                 ]
             ]
-        },
-        "country": "China",
-        "avg_score": 89.0,
-        "total_wines": 1
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "CYP",
         "properties": {
@@ -2256,14 +2190,8 @@
                     [33.973617, 35.058506]
                 ]
             ]
-        },
-        "country": "Cyprus",
-        "avg_score": 87.0,
-        "total_wines": 10
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "CZE",
         "properties": {
@@ -2313,14 +2241,8 @@
                     [16.960288, 48.596982]
                 ]
             ]
-        },
-        "country": "Czech Republic",
-        "avg_score": 87.4545454545,
-        "total_wines": 11
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "DEU",
         "properties": {
@@ -2393,14 +2315,8 @@
                     [9.921906, 54.983104]
                 ]
             ]
-        },
-        "country": "Germany",
-        "avg_score": 89.8436311787,
-        "total_wines": 2104
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "ESP",
         "properties": {
@@ -2466,14 +2382,8 @@
                     [-9.034818, 41.880571]
                 ]
             ]
-        },
-        "country": "Spain",
-        "avg_score": 87.3282051282,
-        "total_wines": 6045
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "FRA",
         "properties": {
@@ -2549,14 +2459,8 @@
                     ]
                 ]
             ]
-        },
-        "country": "France",
-        "avg_score": 88.7421030122,
-        "total_wines": 16367
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "GBR",
         "properties": {
@@ -2633,14 +2537,8 @@
                     ]
                 ]
             ]
-        },
-        "country": "United Kingdom",
-        "avg_score": 91.7090909091,
-        "total_wines": 55
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "GEO",
         "properties": {
@@ -2679,14 +2577,8 @@
                     [41.554084, 41.535656]
                 ]
             ]
-        },
-        "country": "Georgia",
-        "avg_score": 87.6463414634,
-        "total_wines": 82
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "GRC",
         "properties": {
@@ -2761,14 +2653,8 @@
                     ]
                 ]
             ]
-        },
-        "country": "Greece",
-        "avg_score": 87.35,
-        "total_wines": 440
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "HRV",
         "properties": {
@@ -2825,14 +2711,8 @@
                     [18.829838, 45.908878]
                 ]
             ]
-        },
-        "country": "Croatia",
-        "avg_score": 87.3,
-        "total_wines": 70
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "HUN",
         "properties": {
@@ -2878,14 +2758,8 @@
                     [16.202298, 46.852386]
                 ]
             ]
-        },
-        "country": "Hungary",
-        "avg_score": 89.2676056338,
-        "total_wines": 142
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "IND",
         "properties": {
@@ -3036,14 +2910,8 @@
                     [77.837451, 35.49401]
                 ]
             ]
-        },
-        "country": "India",
-        "avg_score": 90.2222222222,
-        "total_wines": 9
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "ISR",
         "properties": {
@@ -3081,14 +2949,8 @@
                     [35.719918, 32.709192]
                 ]
             ]
-        },
-        "country": "Israel",
-        "avg_score": 88.4979508197,
-        "total_wines": 488
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "ITA",
         "properties": {
@@ -3200,14 +3062,8 @@
                     ]
                 ]
             ]
-        },
-        "country": "Italy",
-        "avg_score": 88.7154759684,
-        "total_wines": 16083
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "LBN",
         "properties": {
@@ -3233,14 +3089,8 @@
                     [35.821101, 33.277426]
                 ]
             ]
-        },
-        "country": "Lebanon",
-        "avg_score": 87.6857142857,
-        "total_wines": 35
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "LUX",
         "properties": {
@@ -3262,14 +3112,8 @@
                     [6.043073, 50.128052]
                 ]
             ]
-        },
-        "country": "Luxembourg",
-        "avg_score": 88.6666666667,
-        "total_wines": 3
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "MAR",
         "properties": {
@@ -3348,14 +3192,8 @@
                     [-5.193863, 35.755182]
                 ]
             ]
-        },
-        "country": "Morocco",
-        "avg_score": 88.5714285714,
-        "total_wines": 28
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "MDA",
         "properties": {
@@ -3397,14 +3235,8 @@
                     [26.619337, 48.220726]
                 ]
             ]
-        },
-        "country": "Moldova",
-        "avg_score": 87.2807017544,
-        "total_wines": 57
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "MEX",
         "properties": {
@@ -3589,14 +3421,8 @@
                     [-97.140008, 25.869997]
                 ]
             ]
-        },
-        "country": "Mexico",
-        "avg_score": 85.2571428571,
-        "total_wines": 70
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "MKD",
         "properties": {
@@ -3628,14 +3454,8 @@
                     [20.59023, 41.85541]
                 ]
             ]
-        },
-        "country": "Macedonia",
-        "avg_score": 86.8333333333,
-        "total_wines": 12
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "NZL",
         "properties": {
@@ -3722,14 +3542,8 @@
                     ]
                 ]
             ]
-        },
-        "country": "New Zealand",
-        "avg_score": 88.3152492669,
-        "total_wines": 1364
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "PER",
         "properties": {
@@ -3820,14 +3634,8 @@
                     [-69.590424, -17.580012]
                 ]
             ]
-        },
-        "country": "Peru",
-        "avg_score": 83.5625,
-        "total_wines": 16
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "PRT",
         "properties": {
@@ -3875,14 +3683,8 @@
                     [-9.034818, 41.880571]
                 ]
             ]
-        },
-        "country": "Portugal",
-        "avg_score": 88.3303898342,
-        "total_wines": 4643
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "ROU",
         "properties": {
@@ -3941,14 +3743,8 @@
                     [22.710531, 47.882194]
                 ]
             ]
-        },
-        "country": "Romania",
-        "avg_score": 86.4,
-        "total_wines": 120
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "SRB",
         "properties": {
@@ -4009,14 +3805,8 @@
                     [20.874313, 45.416375]
                 ]
             ]
-        },
-        "country": "Republic of Serbia",
-        "avg_score": 87.5,
-        "total_wines": 12
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "SVK",
         "properties": {
@@ -4064,14 +3854,8 @@
                     [18.853144, 49.49623]
                 ]
             ]
-        },
-        "country": "Slovakia",
-        "avg_score": 87.0,
-        "total_wines": 1
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "SVN",
         "properties": {
@@ -4104,14 +3888,8 @@
                     [13.806475, 46.509306]
                 ]
             ]
-        },
-        "country": "Slovenia",
-        "avg_score": 88.0384615385,
-        "total_wines": 78
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "TUR",
         "properties": {
@@ -4199,14 +3977,8 @@
                     ]
                 ]
             ]
-        },
-        "country": "Turkey",
-        "avg_score": 88.0888888889,
-        "total_wines": 90
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "UKR",
         "properties": {
@@ -4319,14 +4091,8 @@
                     [31.785998, 52.101678]
                 ]
             ]
-        },
-        "country": "Ukraine",
-        "avg_score": 83.8,
-        "total_wines": 5
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "URY",
         "properties": {
@@ -4362,14 +4128,8 @@
                     [-57.625133, -30.216295]
                 ]
             ]
-        },
-        "country": "Uruguay",
-        "avg_score": 86.712962963,
-        "total_wines": 108
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "USA",
         "properties": {
@@ -4865,14 +4625,8 @@
                     ]
                 ]
             ]
-        },
-        "country": "United States of America",
-        "avg_score": 88.6093673091,
-        "total_wines": 52822
-    }
-}, {
-    "type": "FeatureCollection",
-    "features": {
+        }
+    }, {
         "type": "Feature",
         "id": "ZAF",
         "properties": {
@@ -4983,9 +4737,6 @@
                     [28.978263, -28.955597]
                 ]
             ]
-        },
-        "country": "South Africa",
-        "avg_score": 87.8575899844,
-        "total_wines": 1278
-    }
-}]
+        }
+    }]
+}
