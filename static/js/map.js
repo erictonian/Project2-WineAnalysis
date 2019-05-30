@@ -21,10 +21,10 @@ L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
     const geojson = L.choropleth(data, {
 
         // Define what  property in the features to use
-        totalWines: "total_wines",
+        valueProperty: "total_wines",
 
         // Set color scale
-        scale: ["#ffffb2", "#892545"],
+        colors: ['#ffffe0', '#f0dfc8', '#e1c1b1', '#d0a19a', '#bf8484', '#ae666e', '#9c4759', '#892545'],
 
         // Number of breaks in step range
         steps: 8,
