@@ -1,12 +1,18 @@
-#mapPlot,
-body,
-html {
-    height: 600px;
+body {
     padding: 0;
     margin: 0;
 }
 
-.leaflet-popup-content {
+#mapPlot {
+    height: 500px;
+}
+
+.container {
+    height: 100%;
+    width: 95%
+}
+
+*/ .leaflet-popup-content {
     text-align: center;
 }
 

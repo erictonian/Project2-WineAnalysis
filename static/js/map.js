@@ -8,7 +8,7 @@ var myMap = L.map("mapPlot", {
 L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
     attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
     maxZoom: 18,
-    id: "mapbox.streets",
+    id: "mapbox.satellite",
     accessToken: API_KEY
 }).addTo(myMap);
 
@@ -24,7 +24,7 @@ L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
         valueProperty: "total_wines",
 
         // Set color scale
-        colors: ['#ffffe0', '#f0dfc8', '#e1c1b1', '#d0a19a', '#bf8484', '#ae666e', '#9c4759', '#892545'],
+        colors: ['#e8a6ba', '#cd8ca2', '#b3748b', '#995c75', '#7f4460', '#672d4b', '#501737', '#380024'],
 
         // Number of breaks in step range
         steps: 8,
@@ -40,14 +40,14 @@ L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 
         // Binding a pop-up to each layer
         onEachFeature: function (feature, layer) {
-            const popupMsg = `<h3>${feature.properties.name}</h3><br>Number of Wines: ${feature.properties.total_wines}<br>Avg. Wine Review: ${feature.properties.avg_score}`
+            const popupMsg = `<h5>${feature.properties.name}</h5>Number of Wines: ${feature.properties.total_wines}<br>Avg. Wine Review: ${feature.properties.avg_score}`
             layer.bindPopup(popupMsg);
         }
     }).addTo(myMap);
 
     // Set up the legend
     const legend = L.control({
-        position: "bottomright"
+        position: "topright"
     });
     legend.onAdd = function () {
         const div = L.DomUtil.create("div", "info legend");
@@ -55,7 +55,7 @@ L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
         const colors = geojson.options.colors;
 
         // Add min & max
-        const legendInfo = "<h2>Wines Reviewed</h2>" +
+        const legendInfo = "<center>Wines Reviewed</center>" +
             "<div class=\"labels\">" +
             "<div class=\"min\">" + limits[0] + "</div>" +
             "<div class=\"max\">" + limits[limits.length - 1] + "</div>" +
