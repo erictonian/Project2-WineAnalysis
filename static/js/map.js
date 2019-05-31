@@ -14,7 +14,7 @@ L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 
 (async function () {
     // Link to GeoJSON
-    const path = "/MapData"
+    const path = "../../db/map_data.json"
     const data = await d3.json(path);
 
     // Create a new choropleth layer
