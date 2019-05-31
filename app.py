@@ -27,13 +27,20 @@ Base = automap_base()
 Base.prepare(db.engine, reflect=True)
 
 # Save references to each table
-Wines = Base.classes.wines
+# Wines = Base.classes.wine_data
 
 
 @app.route("/")
 def index():
     """Return the homepage."""
     return render_template("index.html")
+
+
+@app.route("/MapData")
+def map_data(map_data):
+    """ Return the map data in GeoJSON format """
+    map_data = "/db/map_data.json"
+    return jsonify(map_data)
 
 
 if __name__ == "__main__":
