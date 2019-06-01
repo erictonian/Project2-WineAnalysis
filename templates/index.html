@@ -54,15 +54,15 @@
       </div>
       <div>
         <h5>Select Country</h5>
-        <select id="selDataset" onchange="optionChanged(this.valiue)"></select>
+        <select id="selDataset" onchange="optionChanged(this.value)"></select>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-5">
+      <div class="col-md-7">
         <div id="d3Plot"></div>
       </div>
       <div class="col-md-5">
-        <div id="wineTypePlot"></div>
+        <div id="bar"></div>
       </div>
     </div>
   </div>
@@ -73,6 +73,8 @@
   <!-- Our JavaScript files-->
   <!-- <script type="text/javascript" src="../static/js/map.js"></script> -->
   <script src="{{ url_for('static', filename='js/map.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/bar.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/d3.js') }}"></script>
   <script src="{{ url_for('static', filename='js/init.js') }}"></script>
 
 </body>

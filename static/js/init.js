@@ -8,23 +8,23 @@ function init() {
             selector
                 .append("option")
                 .text(country)
-                .property("value", country);
+                .property("value", country)
         });
 
         // Use the first sample from the list to build the initial plots
-        // const firstCountry = country[0];
-        // buildCharts(firstCountry)
-        // buildMap(firstCountry)
+        const firstCountry = countryNames[0]
+        buildBar(firstCountry)
+        buildD3(firstCountry)
     });
 }
 
 
 // Get new data whenever the dropdown selection changes
-// function optionChanged(newCountry) {
-//     //fetch new data for the new country
-//     buildCharts(newCountry)
-//     buildMap(newCountry)
-// }
+function optionChanged(newCountry) {
+    //fetch new data for the new country
+    buildBar(newCountry)
+    buildD3(newCountry)
+}
 
 // // Initializae the dashboard
 init()
