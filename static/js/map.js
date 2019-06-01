@@ -12,9 +12,9 @@ L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
     accessToken: API_KEY
 }).addTo(myMap);
 
-(async function () {
+(async function buildMap() {
     // Link to GeoJSON
-    const path = "../../db/map_data.json"
+    const path = "/mapData"
     const data = await d3.json(path);
 
     // Create a new choropleth layer
