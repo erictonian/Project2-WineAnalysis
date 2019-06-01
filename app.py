@@ -1,5 +1,6 @@
 import os
 
+import json
 import pandas as pd
 import numpy as np
 
@@ -27,7 +28,7 @@ Base = automap_base()
 Base.prepare(db.engine, reflect=True)
 
 # Save references to each table
-# Wines = Base.classes.wine_data
+Wines = Base.classes.wine_data
 
 
 @app.route("/")
@@ -36,12 +37,30 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/MapData")
-def map_data(map_data):
+@app.route("/countries")
+def country_names():
+    """Return the choices for the selection country"""
+
+    # Query for the country
+    results = db.session.query(Wines.country.distinct().label("country"))
+    countries = [row.country for row in results.all()]
+    countries = sorted(countries, reverse=False)
+
+    # ready to load into country selector
+    print(countries)
+    return jsonify(countries)
+
+
+@app.route("/mapData")
+def map_data():
     """ Return the map data in GeoJSON format """
-    map_data = "/db/map_data.json"
+    filepath = os.path.join("db", "map_data.json")
+    with open(filepath) as jsonfile:
+        map_data = json.load(jsonfile)
+
+    print(map_data)
     return jsonify(map_data)
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
