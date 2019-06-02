@@ -36,22 +36,17 @@
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="index.html">World Wine Map
-        </a>
+        <p class="navbar-text">World Wine Map</p>
       </div>
     </div>
   </nav>
   <div class="container">
-    <!-- <div class="row">
-      <div class="col-md-12 jumbotron text-center">
-        <h1>World Wine Map</h1>
-        <p>This is a map of wine stuff</p>
-      </div>
-    </div> -->
     <div class="row">
       <div class="col-md-12">
         <div id="mapPlot"></div>
       </div>
+    </div>
+    <div class="row" id="dropdown-row">
       <div>
         <h5>Select Country</h5>
         <select id="selDataset" onchange="optionChanged(this.value)"></select>
@@ -66,6 +61,14 @@
       </div>
     </div>
   </div>
+  <nav class="navbar navbar-default justify-content-between">
+    <div class="container-fluid">
+      <div class="navbar-footer">
+        <span class="navbar-text navbar-left">UT Austin Data Bootcamp - Project 2</span>
+        <span class="navbar-text navbar-right">Team Members: Ryan Frescas, Eric Stavely, Tony Jones, Eric Tonian</span>
+      </div>
+    </div>
+  </nav>
 
   <!-- API Key -->
   <script type="text/javascript" src="../static/js/config.js"></script>

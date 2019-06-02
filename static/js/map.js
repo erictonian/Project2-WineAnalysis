@@ -1,12 +1,21 @@
 // Creating map object
+const bounds = L.LatLngBounds(L.LatLng(-89.999999, -179.999999), L.LatLng(89.999999, 179.999999))
+
 var myMap = L.map("mapPlot", {
-    center: [20, 0],
+    center: [4.5, 20],
+    zoomSnap: .1,
+    zoomDelta: .5,
     zoom: 2.5,
+    minZoom: 2.5,
+    maxZoom: 6,
+    setMaxBounds: bounds,
+    maxBoundsViscosity: 1,
 });
 
 // Adding tile layer
 L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
     attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
+    noWrap: false,
     maxZoom: 18,
     id: "mapbox.satellite",
     accessToken: API_KEY
@@ -24,7 +33,7 @@ L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
         valueProperty: "total_wines",
 
         // Set color scale
-        colors: ['#fff199', '#e7cf88', '#d0ae77', '#b88e67', '#a16e57', '#8a5048', '#723139', '#5b0e2a'],
+        colors: ['#f3c4d7', '#dda9bb', '#c78ea1', '#b17587', '#9c5b6e', '#864256', '#712a3f', '#5b0e2a'],
 
         // Number of breaks in step range
         steps: 8,
