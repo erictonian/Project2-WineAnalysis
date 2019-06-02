@@ -49,7 +49,7 @@ L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 
         // Binding a pop-up to each layer
         onEachFeature: function (feature, layer) {
-            const popupMsg = `<h5>${feature.properties.name}</h5>Number of Wines: ${feature.properties.total_wines}<br>Avg. Wine Review: ${feature.properties.avg_score}`
+            const popupMsg = `<center><h5>${feature.properties.name}</h5>Number of Wines: ${feature.properties.total_wines}<br>Avg. Wine Review: ${feature.properties.avg_score}</center>`
             layer.bindPopup(popupMsg);
         }
     }).addTo(myMap);
