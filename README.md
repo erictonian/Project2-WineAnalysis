@@ -1,5 +1,3 @@
-![glug-glug](static/images/winepour.gif)
-
 # UTA Data Bootcamp Project 2 - Analysis of Wine Ratings
 
 ---
@@ -30,3 +28,5 @@ https://github.com/johan/world.geo.json
 
 Choropleth Leaflet Plugin
 https://github.com/timwis/leaflet-choropleth
+
+![glug-glug](static/images/winepour.gif)
