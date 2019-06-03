@@ -53,12 +53,30 @@ function updateToolTip(chosenYAxis, circlesGroup) {
     let ylabel = "";
     // Updating circles group along y-axis
     if (chosenYAxis === "points") {
-        ylabel = "Wine Ratings (Points)";
+        ylabel = "Wine Ratings (Points):";
     }
     // else if (chosenYAxis === "price") {
     else {
-        ylabel = "Wine Price ($)";
+        ylabel = "Wine Price ($):";
     }
+
+    let toolTip = d3.tip()
+        .attr("class", "tooltip")
+        .html(function (d) {
+            return (`${ylabel} ${d[chosenYAxis]}`)
+        })
+
+    circlesGroup.call(toolTip)
+
+    // on mouse event
+    circlesGroup.on("mouseover", function (data) {
+            toolTip.show(data, this)
+        })
+
+        // on mouse out event
+        .on("mouseout", function (data) {
+            toolTip.hide(data, this)
+        })
 
     return circlesGroup;
 }
@@ -170,7 +188,7 @@ async function buildD3(country) {
         .text("Vintage Years ")
 
     // // updateToolTip function above
-    // circlesGroup = updateToolTip(chosenYAxis, circlesGroup);
+    circlesGroup = updateToolTip(chosenYAxis, circlesGroup);
 
     // y axis labels event listener
     labelsYGroup.selectAll("text")
@@ -189,7 +207,7 @@ async function buildD3(country) {
                 // updates circles with new y values
                 circlesGroup = renderCircles(circlesGroup, yLinearScale, chosenYAxis);
                 // updates tooltips with new info
-                // circlesGroup = updateToolTip(chosenYAxis, circlesGroup);
+                circlesGroup = updateToolTip(chosenYAxis, circlesGroup);
                 // changes classes to change bold text
                 if (chosenYAxis === "points") {
                     pointsLabel

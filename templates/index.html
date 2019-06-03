@@ -13,6 +13,9 @@
   <!-- Plotly JS-->
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
+  <!-- MapBox JS -->
+  <script src="https://api.mapbox.com/mapbox.js/v3.2.0/mapbox.js"></script>
+
   <!-- Leaflet CSS & JS-->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
     integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
@@ -77,8 +80,10 @@
   <!-- API Key -->
   <script type="text/javascript" src="../static/js/config.js"></script>
 
+  <!--- Script for Tool Tip-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+
   <!-- Our JavaScript files-->
-  <!-- <script type="text/javascript" src="../static/js/map.js"></script> -->
   <script src="{{ url_for('static', filename='js/map.js') }}"></script>
   <script src="{{ url_for('static', filename='js/bar.js') }}"></script>
   <script src="{{ url_for('static', filename='js/d3.js') }}"></script>
