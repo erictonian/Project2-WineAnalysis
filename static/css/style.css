@@ -106,3 +106,9 @@ h1 {
     transition: fill 0.3s ease-out;
     text-anchor: middle;
 }
+
+.tooltip {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
