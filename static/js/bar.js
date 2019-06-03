@@ -17,7 +17,7 @@ async function buildBar(country) {
     //Pinot Noir, Cabernet Sauvignon, Chardonnay, Syrah, Red Blend,
     //Zinfandel, MErlot, Sauvignon Blanc, Bordeaux-style Red Blend, Riesling
     //anthing else will be a medium blue/green
-    //
+
     var count = 0;
     colorArray = []
     for (var i = 0; i < itemsReturned; ++i) {
@@ -36,7 +36,7 @@ async function buildBar(country) {
         } else {
             //put any non matching colors here
             //colorBasecolor = 'rgba(204,204,204,1)'
-            colorBasecolor = 'rgba(0,103,120,1)'      //jacksonville jag teal
+            colorBasecolor = 'rgba(0,103,120,1)' //jacksonville jag teal
             colorArray.push(colorBasecolor)
         }
 
@@ -57,16 +57,20 @@ async function buildBar(country) {
 
     const layout = {
         margin: {
-            t: 100,
-            b: 100
+            t: 30,
+            b: 90
         },
         showlegend: false,
-        title: "Top 10 Variety Counts",
-        paper_bgcolor: 'rgba(253, 252, 249,1)',  //  match to style.css  #fdfcf9
-        plot_bgcolor: 'rgba(253, 252, 249,1)',
+        title: "Top 10 Varietal Counts",
+        paper_bgcolor: 'rgba(0, 0, 0, 0)', //  transparent backgroung
+        plot_bgcolor: 'rgba(0, 0, 0, 0)',
+        yaxis: {
+            showgrid: true,
+            gridcolor: '#bdbdbd',
+            gridwidth: 2,
+        }
     };
 
 
     Plotly.newPlot("bar", varietyData, layout);
 }
-
