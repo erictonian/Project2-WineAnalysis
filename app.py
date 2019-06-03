@@ -67,7 +67,7 @@ def map_data():
 def varieties_data(country):
     """Return variety counts by the selected country"""
 
-    print(country)
+    # print(country)
     stmt = db.session.query(Wines).statement
     df = pd.read_sql_query(stmt, db.session.bind)
 
@@ -83,7 +83,7 @@ def varieties_data(country):
         "count": df_top10varieties.Counts.values.tolist(),
     }
 
-    print(data)
+    # print(data)
     return jsonify(data)
 
 
@@ -112,7 +112,7 @@ def time_data(country):
 
     data = df_total.to_json(orient="records")
 
-    print(data)
+    # print(data)
     return data
 
 

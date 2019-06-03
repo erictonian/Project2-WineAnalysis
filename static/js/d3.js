@@ -13,8 +13,10 @@ let height = svgHeight - margin.top - margin.bottom;
 function yScale(timeData, chosenYAxis) {
     // create scales
     const yLinearScale = d3.scaleLinear()
-        .domain([0, d3.max(timeData, d => d[chosenYAxis]) * 1.1])
-        .range([height, 0]);
+        .domain([d3.min(timeData, d => d[chosenYAxis]) * .72,
+            d3.max(timeData, d => d[chosenYAxis])
+        ])
+        .range([height, 0])
 
     return yLinearScale;
 }
@@ -133,7 +135,7 @@ async function buildD3(country) {
         .attr("cx", d => xLinearScale(d.year))
         .attr("cy", d => yLinearScale(d[chosenYAxis]))
         // .attr("cy", d => yLinearScale(d.points))
-        .attr("r", 20)
+        .attr("r", 15)
         .attr("fill", "maroon")
         .attr("opacity", ".85")
 
