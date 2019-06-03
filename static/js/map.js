@@ -12,7 +12,7 @@ var myMap = L.map("mapPlot", {
     maxBoundsViscosity: 1,
 });
 
-// Adding tile layer
+// Adding tile layer (now with a button)
 L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
     attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
     noWrap: false,
@@ -49,7 +49,7 @@ L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 
         // Binding a pop-up to each layer
         onEachFeature: function (feature, layer) {
-            const popupMsg = `<center><h5>${feature.properties.name}</h5>Number of Wines: ${feature.properties.total_wines}<br>Avg. Wine Review: ${feature.properties.avg_score}</center>`
+            const popupMsg = `<center><h5><button id="selDataset" onclick="buttonOptionChanged(this)">${feature.properties.name}</button></h5>Number of Wines: ${feature.properties.total_wines}<br>Avg. Wine Review: ${feature.properties.avg_score}</center>`
             layer.bindPopup(popupMsg);
         }
     }).addTo(myMap);

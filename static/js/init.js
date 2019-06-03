@@ -21,6 +21,16 @@ function init() {
 
 // Get new data whenever the dropdown selection changes
 function optionChanged(newCountry) {
+
+    buildBar(newCountry)
+    buildD3(newCountry)
+}
+
+// var test
+function buttonOptionChanged(htmlEvent) {
+    let newCountry = htmlEvent.textContent
+    // d3.select(htmlEvent).textContent
+    //test = newCountry
     //fetch new data for the new country
     buildBar(newCountry)
     buildD3(newCountry)
