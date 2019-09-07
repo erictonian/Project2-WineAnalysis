@@ -5,6 +5,7 @@
 ### Team Members: Ryan Frescas, Eric Staveley, Tony Jones, Eric Tonian
 
 ---
+Link to functioning build: https://wineanalysis.herokuapp.com
 
 ## Project Summary
 
