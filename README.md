@@ -17,7 +17,7 @@ Two main data transformations were necessary for this project:
   - The first involved cleaning the wine csv itself to remove and modify values that would result in issues when mapping and aggregating the data. We also were able to pull the year from the title column in order to perform time-based analysis in our graphs. These changes were then converted into a sqlite file for the Flask app. 
   - The second involved merging the wine csv with a geojson containing country boundaries and then exporting this back into a properly formatted geojson in order to correctly display wine data on the choropleth map.
   
-The app was built with Flask, connecting our sqlite file to the database and creating routes for the main page, map, dropdown, and the two graphs. The graph routes contain all data aggregation neccessary for the corresponding js files based on user selection of the dropdown.
+The app was built with Flask, connecting our sqlite file to the database and creating routes for the main page, map, dropdown, and the two graphs. The graph routes contain all data aggregation necessary for the corresponding js files based on user selection of the dropdown.
 
 ## Resources
 
